@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/robot269006/Natours/issues"
   },
-  "homepage": "https://github.com/robot269006/Natours#readme"
+  "homepage": "https://github.com/robot269006/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
 }
