@@ -8,7 +8,22 @@
 
 html {
   //This defines what 1 rem is
-  font-size: 62.5%;
+  font-size: 62.5%; //1rem = 10px, because default is 16px, 16 * 0.625 = 10
+
+  // base size setting for phone is commented out since the settings for tab-port would be enough.
+  // @include respond(phone) {
+  //   font-size: 50%; //
+  // }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+  }
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px, 8/16 = 50%
+  }
+  @include respond(desktop) {
+    font-size: 75%; //1rem = 12px, 12/16 = 75%
+  }
 }
 
 body {
